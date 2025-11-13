@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 // @ts-ignore
-const vue = require('@vitejs/plugin-vue');
+const vuePlugin = require('@vitejs/plugin-vue');
+const vue = vuePlugin.default || vuePlugin;
 
 export default defineConfig({
   plugins: [vue()],
